@@ -3,9 +3,9 @@ def ground_shipping(weight):
   flat_charge = 20
   if weight <= 2:
     variable_cost = weight * 1.5
-  elif weight > 2 and weight <= 6:
+  elif weight <= 6:
     variable_cost = weight * 3
-  elif weight > 6 and weight <= 10:
+  elif weight <= 10:
     variable_cost = weight * 4
   else:
     variable_cost = weight * 4.75
@@ -20,9 +20,9 @@ def drone_shipping(weight):
   flat_charge = 0
   if weight <= 2:
     variable_cost = weight * 4.5
-  elif weight > 2 and weight <= 6:
+  elif weight <= 6:
     variable_cost = weight * 9
-  elif weight > 6 and weight <= 10:
+  elif weight <= 10:
     variable_cost = weight * 12
   else:
     variable_cost = weight * 14.25
