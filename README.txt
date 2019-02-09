@@ -1,0 +1,1 @@
+My solution to the Codecademy's project called 'Cheapest Shipping Method', that calculates which of the 3 shipping methods is the best depending on the weight of the package. I adden the tie cases to the solution.
