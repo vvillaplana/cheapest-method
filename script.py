@@ -37,29 +37,32 @@ def cheapest_shipping(weight):
   if ground < drone and ground < premium_ground_shipping:
     print("Ground Shipping is the cheapest method.")
     print("The cost is " + str(ground) + " USD.")
-  if drone < ground and drone < premium_ground_shipping:
+  elif drone < ground and drone < premium_ground_shipping:
     print("Drone Shipping is the cheapest method.")
     print("The cost is " + str(drone) + " USD.")
-  if premium_ground_shipping < ground and premium_ground_shipping < drone:
+  elif premium_ground_shipping < ground and premium_ground_shipping < drone:
     print("Premium Ground Shipping is the cheapest method.")
     print("The cost is " + str(premium_ground_shipping) + " USD.")
-  if ground == drone and ground < premium_ground_shipping:
+  elif ground == drone and ground < premium_ground_shipping:
     print("Ground Shipping and Drone Shipping are the cheapest methods.")
     print("The cost is " + str(ground) + " USD.")
-  if ground == drone and ground > premium_ground_shipping:
+  elif ground == drone and ground > premium_ground_shipping:
     print("Premium Ground Shipping is the cheapest method.")
     print("The cost is " + str(premium_ground_shipping) + " USD.")
-  if ground == premium_ground_shipping and ground < drone:
+  elif ground == premium_ground_shipping and ground < drone:
     print("Ground Shipping and Premium Ground Shipping are the cheapest methods.")
     print("The cost is " + str(ground) + " USD.")
-  if ground == premium_ground_shipping and ground > drone:
+  elif ground == premium_ground_shipping and ground > drone:
     print("Drone Shipping is the cheapest method.")
     print("The cost is " + str(drone) + " USD.")
-  if drone == premium_ground_shipping and drone < ground:
+  elif drone == premium_ground_shipping and drone < ground:
     print("Ground Shipping and Drone Shipping are the cheapest methods.")
     print("The cost is " + str(premium_ground_shipping) + " USD.")
-  if drone == premium_ground_shipping and drone > ground:
+  elif drone == premium_ground_shipping and drone > ground:
     print("Ground Shipping is the cheapest method.")
+    print("The cost is " + str(ground) + " USD.")
+  elif ground == drone and ground == premium_ground_shipping:
+    print("All the shipping methods have the same cost.")
     print("The cost is " + str(ground) + " USD.")
   else:
     print("Error! Please try again")
